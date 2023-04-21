@@ -25,6 +25,7 @@ public class Main {
         bankAccount1.addBonus(500000);
 
 
+
     }
 
 
@@ -36,10 +37,10 @@ class BankAccount{
     int balance;
     String ownerName;
 
-    BankAccount(String newAcNo,int newBalance,String ownerNameValue){
-        acNo = newAcNo;
-        balance = newBalance;
-        ownerName = ownerNameValue;
+    BankAccount(String acNo,int balance,String ownerName){
+        this.acNo = acNo;
+        this.balance = balance;
+        this.ownerName = ownerName;
     }
 
     int withdrawMoney(int money){
@@ -61,17 +62,19 @@ class BankAccount{
 
 
 class Person{
-
     String name;
     int age;
     String dreamPlaceToVisit;
     int noOfFriends;
+    Person(String name,int age,String dreamPlaceToVisit,int noOfFriends){
+        this.name = name;
+        this.age = age;
+        this.dreamPlaceToVisit = dreamPlaceToVisit;
+        this.noOfFriends = noOfFriends;
+    }
 
-    Person(String newName,int newAge,String dreamPlaceToVisitAns,int valueNoOfFriends){
-        name = newName;
-        age = newAge;
-        dreamPlaceToVisit = dreamPlaceToVisitAns;
-        noOfFriends = valueNoOfFriends;
+    void danceForMins(int time,String name){
+        dance(name);
     }
 
     void dance(String name){
