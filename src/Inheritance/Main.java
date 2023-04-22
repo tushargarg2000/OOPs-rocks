@@ -45,10 +45,32 @@ class Person{
     int mobNo;
     String email;
 
+    String country;
+
+    String hobby;
+
+    String instaFollowers;
+
+
+
+
+    public Person(String name, int age, int mobNo, String email, String country, String hobby, String instaFollowers) {
+        this(name,age,mobNo,email,country);
+        this.hobby = hobby;
+        this.instaFollowers = instaFollowers;
+    }
 
     public Person(String name,int age){
         this.name = name;
         this.age = age;
+    }
+
+
+    public Person(String name, int age, int mobNo, String email, String country) {
+        this(name,age);
+        this.mobNo = mobNo;
+        this.email = email;
+        this.country = country;
     }
 
     public Person(String name, int age, int mobNo, String email) {
