@@ -17,7 +17,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Create a Linked List
-        Node head; // Reference variable that will store the
+        // Reference variable that will store the
         //address of the starting node of the linked List
 
         Scanner sc = new Scanner(System.in);
@@ -30,6 +30,8 @@ public class Main {
             int value = sc.nextInt();
             ll.addNode(value);
         }
+
+        ll.printList();
     }
 }
 
@@ -58,12 +60,28 @@ class LinkedList{
         while(node.nextNode!=null){
             node = node.nextNode;
         }
-
         //After reaching here : we would have come to the end
         //of the linked List
 
         node.nextNode = newNode;
 
     }
+
+
+    public void printList(){
+
+
+        Node node = head;
+
+        //Traverse the Linked List
+        while(node!=null){
+            System.out.println(node.data+" ");
+            node = node.nextNode;
+        }
+    }
+
+
+
+
 
 }
