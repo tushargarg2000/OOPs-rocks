@@ -1,0 +1,48 @@
+
+\
+java:S1192"GDefine a constant instead of duplicating this literal "tushar" 3 times.(éúÓ`
+v
+java:S1488d"[Immediately return this expression instead of assigning it to the temporary variable "ans".(ÍÀ­Ñşÿÿÿÿ
+v
+java:S1488i"[Immediately return this expression instead of assigning it to the temporary variable "ans".(ÍÀ­Ñşÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Èøù¥ÿÿÿÿÿ
+K
+java:S1854"5Remove this useless assignment to local variable "p".(ßİÌÑ
+P
+java:S1854";Remove this useless assignment to local variable "person1".(éúÓ`
+U
+java:S1854
+":Remove this useless assignment to local variable "person".(Ï†æúıÿÿÿÿ
+F
+java:S1481
+"+Remove this unused "person" local variable.(Ï†æúıÿÿÿÿ
+A
+java:S1481",Remove this unused "person1" local variable.(éúÓ`
+V	java:S125"<This block of commented-out lines of code should be removed.(üÌ¦øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(§ĞøÚúÿÿÿÿ
+<
+java:S1481"&Remove this unused "p" local variable.(ßİÌÑ
+N	java:S106T"9Replace this use of System.out or System.err by a logger.(ö¾½
+A
+java:S2387]"+"email" is the name of a field in "Person".(­ÁÇ
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼·‘†şÿÿÿÿ
+˜
+java:S1186™"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(×ˆ±¢
+˜
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(µµŞ¦
+O
+java:S1854b"9Remove this useless assignment to local variable "value".(šŒõ
+@
+java:S1481b"*Remove this unused "value" local variable.(šŒõ
+R	java:S125„"<This block of commented-out lines of code should be removed.(íÆŞ
+V
+java:S1161":Add the "@Override" annotation above this method signature(¼·‘†şÿÿÿÿ
+P
+java:S3400“"9Remove this method and declare a constant for this value.(”·³›
+H
+java:S1172’",Remove this unused method parameter "money".(ôİàûÿÿÿÿ
+P
+java:S3400–"9Remove this method and declare a constant for this value.(”·³›
+C
+java:S1172•",Remove this unused method parameter "money".(ÓŒÓ‹

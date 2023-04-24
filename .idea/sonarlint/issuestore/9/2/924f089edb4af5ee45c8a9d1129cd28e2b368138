@@ -1,0 +1,12 @@
+
+0
+java:S1220""Move this file to a named package.
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‚ÞÏ¥ýÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ü›ûè
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(Ãó×¬
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(ÁÒþ®
+G
+java:S1172L"+Remove this unused method parameter "time".(ŒÞ«;8‘àÎ£ú0
+Z	java:S106Q"9Replace this use of System.out or System.err by a logger.(âÔÄÇýÿÿÿÿ8×òÎ£ú0
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8²·Ü£ú0
