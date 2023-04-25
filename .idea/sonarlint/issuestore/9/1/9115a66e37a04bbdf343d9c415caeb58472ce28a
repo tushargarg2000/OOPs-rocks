@@ -1,0 +1,14 @@
+
+f
+java:S1104"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾
+e
+java:S1104"OMake age a static final constant or non-public and provide accessors if needed.(×Áò¿
+R
+java:S4973)"<Strings and Boxed types should be compared using "equals()".(†“Ó›
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶ÃÃìûÿÿÿÿ
+Q
+java:S1854"<Remove this useless assignment to local variable "password".(¥§÷0
+B
+java:S1481"-Remove this unused "password" local variable.(¥§÷0
+E
+java:S11729"/Remove this unused method parameter "password".(ãäğ¦
