@@ -9,3 +9,9 @@ L
 src/Encapsulation/Ahmad.java,4/a/4a19fb227d155af921f0fd9cfb00e62ccbd341b5
 K
 src/Encapsulation/Main.java,9/1/9115a66e37a04bbdf343d9c415caeb58472ce28a
+M
+src/StaticKnowledge/Main.java,c/a/cad3889a3dbc3fa21622415be443289d766a9c63
+L
+src/Abstraction/BankAtm.java,4/9/49e64a460818059680291986a2f0fba104e58d2f
+I
+src/Abstraction/Main.java,3/a/3a1114b08a3ffec9d894b4f6b355dc178eea8430
