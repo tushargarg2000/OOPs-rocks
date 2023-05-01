@@ -1,0 +1,100 @@
+import java.io.*;
+import java.util.*;
+
+class Node{
+    int data;
+    Node next;
+    Node(int data){
+        this.data = data;
+        next = null;
+    }
+}
+class LinkedList{
+    Node head;
+    void add(int data ){
+        Node new_node = new Node(data);
+        if(head == null){
+            head = new_node;
+            return;
+        }
+        Node current = head;
+        while(current.next !=null){
+            current = current.next;
+        }
+        current.next = new_node;
+    }
+}
+
+class Solution {
+
+	static int countNodes(Node head){
+
+		Node temp = head;
+		int cnt = 0;
+		while(temp!=null){
+			cnt++;
+			temp = temp.next;
+		}
+		return cnt;
+	}
+
+	static void printList(Node head){
+
+
+			Node temp1 = head;
+		while(temp1!=null){
+			System.out.print(temp1.data+" ");
+			temp1 = temp1.next;
+		}
+	}
+
+
+
+    static void rotateRight(Node head, int k) {
+    // Your code here
+
+		int count = countNodes(head);
+
+		k = k%count;
+
+		if(k==0){
+			printList(head);
+			return;
+		}
+
+		//n-kth node
+		int steps = count-k;
+
+		Node node = head;
+		while(steps>1){
+			node = node.next;
+			steps--;
+		}
+		Node newHead = node.next;
+		node.next = null;
+		Node temp = newHead;
+		while(temp.next!=null){
+			temp = temp.next;
+		}
+
+		//We have reached at the last node
+		temp.next = head;
+
+		printList(newHead);
+
+    }
+}
+public class Main {
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        LinkedList l1= new LinkedList();
+        for(int i=0;i<n;i++){
+            l1.add(sc.nextInt());
+        }
+        Solution Ob = new Solution();
+        int k = sc.nextInt();
+        Ob.rotateRight(l1.head, k);
+    }
+}
