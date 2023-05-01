@@ -1,0 +1,76 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        Scanner sc = new Scanner(System.in);
+        String homepage = sc.nextLine();
+        int n = sc.nextInt();
+        sc.nextLine();
+        BrowserHistory browserHistory = new BrowserHistory(homepage);
+        for(int i = 0; i < n; i++) {
+            String q = sc.nextLine();
+            String[] query = q.split("\\s+");
+            if(query[0].equals("visit")){
+                browserHistory.visit(query[1]);
+            } else if(query[0].equals("back")){
+                browserHistory.back(Integer.parseInt(query[1]));
+            } else if(query[0].equals("forward")){
+                browserHistory.forward(Integer.parseInt(query[1]));
+            }
+        }
+    }
+}
+class Node{
+	String data;
+	Node next;
+	Node prev;
+
+	Node(String data){
+		this.data = data;
+		next = null;
+		prev=  null;
+	}
+}
+class BrowserHistory {
+
+	Node curr; //This denotes your position
+
+    public BrowserHistory(String homepage) {
+        // your code here
+		//This is the first Node of Our LL
+		Node newNode = new Node(homepage);
+		curr = newNode;
+
+    }
+    public void visit(String url) {
+        // your code here
+		Node newNode = new Node(url);
+		curr.next = newNode;
+		newNode.prev = curr;
+		curr = newNode;
+    }
+
+    public void back(int steps) {
+        // your code here
+		//I will only go those many steps until I can go back
+
+		while(curr.prev!=null && steps>0){
+			curr = curr.prev;
+			steps--;
+		}
+
+		System.out.println(curr.data);
+
+		//Either the steps will be 0 and we come out of the loop
+		//Or we reach the firstNode of the LL :
+    }
+    public void forward(int steps) {
+        // your code here
+
+		while(curr.next!=null && steps>0){
+			curr = curr.next;
+			steps--;
+		}
+		System.out.println(curr.data);
+    }
+}
