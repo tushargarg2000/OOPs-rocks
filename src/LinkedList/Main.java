@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 class Node{
@@ -40,6 +42,13 @@ class LinkedList{
     Node head; //It will point to the address of the first Node
 
     public void addNode(int value){
+
+
+        List<Integer> li = new ArrayList<>();
+
+        ArrayList<Integer> arrList = new ArrayList<>();
+
+        LinkedList ll = new LinkedList();
 
         Node newNode = new Node(value);
 

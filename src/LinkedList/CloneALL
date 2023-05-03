@@ -197,37 +197,19 @@ class Solution {
 
 
 		original = head;
-		Node newLL = newLLHead;
+		Node copy = newLLHead;
 
-		while(original!=null){
-			original.next = original.next.next;
-			newLL.next = newLL.next.next;
+		Node temp = copy;
 
-			System.out.print("new LL and original ll"+original.data+"-- "+newLL.data);
+		 while (original != null) {
+            original.next =original.next.next;
 
-			original = original.next;
-			newLL = newLL.next;
-		}
-
-
-		//printing the original and newLL
-		System.out.println("Old ll is being printed");
-		Node temp1 = head;
-		while(temp1!=null){
-			System.out.print(temp1.data+" ");
-			temp1 = temp1.next;
-		}
-
-		System.out.println("new ll is being printed");
-		temp1 = newLLHead;
-		while(temp1!=null){
-			System.out.print(temp1.data+" ");
-			temp1 = temp1.next;
-		}
-
-
-
-		return newLLHead;
+          copy.next = (copy.next != null) ? copy.next.next
+                                            : copy.next;
+            original = original.next;
+            copy = copy.next;
+        }
+        return temp;
 
     }
 }
